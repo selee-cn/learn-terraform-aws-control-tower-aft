@@ -1,6 +1,17 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+terraform {
+
+  cloud {
+    organization = "tf-cn"
+
+    workspaces {
+      name = "slee-aft-test"
+    }
+  }
+
+
 module "aws-control-tower-aft-main" {
   source  = "app.terraform.io/tf-cn/aws-control-tower-aft-main/terraform"
   version = "0.0.1"
