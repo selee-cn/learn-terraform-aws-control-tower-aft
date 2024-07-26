@@ -10,6 +10,7 @@ terraform {
       name = "slee-aft-test"
     }
   }
+}
 
 
 module "aws-control-tower-aft-main" {
